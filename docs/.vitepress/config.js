@@ -9,7 +9,9 @@ export default ({
     nav: nav(),
 
     sidebar: {
-      '/js/': sidebarJs()
+      '/js/': sidebarJs(),
+      '/repository/': sidebarRepository(),
+      '/website/': sidebarWebsite(),
     },
 
     socialLinks: [
@@ -25,6 +27,9 @@ export default ({
 
 function nav() {
   return [
+    { text: '首页', link: '/js/base', activeMatch: '/js/' },
+    { text: '前端库', link: '/repository/component', activeMatch: '/repository/' },
+    { text: '网站', link: '/website/common', activeMatch: '/website/' },
     { text: '掘金', link: 'https://juejin.cn/user/184373686320776' }
   ]
 }
@@ -43,3 +48,29 @@ function sidebarJs() {
   ]
 }
 
+function sidebarRepository() {
+  return [
+    {
+      text: '前端库',
+      collapsible: true,
+      items: [
+        { text: '组件库', link: '/repository/component' },
+        { text: '常用库', link: '/repository/common' }
+      ]
+    }
+  ]
+}
+
+function sidebarWebsite() {
+  return [
+    {
+      text: '网站',
+      collapsible: true,
+      items: [
+        { text: '常看网站', link: '/website/common' },
+        { text: '图片', link: '/website/img' },
+        { text: '其他', link: '/website/other' }
+      ]
+    }
+  ]
+}

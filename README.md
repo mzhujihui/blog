@@ -4,5 +4,5 @@
 
 ```
   // 启动
-  npm run docs:dev 
+  npm run docs:dev
 ```
