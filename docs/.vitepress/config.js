@@ -15,7 +15,7 @@ export default ({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://mzhujihui.github.io' }
+      { icon: 'github', link: 'https://github.com/mzhujihui' }
     ],
 
     footer: {
@@ -37,7 +37,7 @@ function nav() {
 function sidebarJs() {
   return [
     {
-      text: '重学Js',
+      text: 'JS',
       collapsible: true,
       items: [
         { text: '数据类型', link: '/js/base' },
