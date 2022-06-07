@@ -69,6 +69,7 @@ function sidebarWebsite() {
       items: [
         { text: '常看网站', link: '/website/common' },
         { text: '图片', link: '/website/img' },
+        { text: 'Git', link: '/website/git' },
         { text: '其他', link: '/website/other' }
       ]
     }
