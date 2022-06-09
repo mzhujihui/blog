@@ -68,8 +68,8 @@ function sidebarWebsite() {
       collapsible: true,
       items: [
         { text: '常看网站', link: '/website/common' },
+        { text: 'Git和Github', link: '/website/git' },
         { text: '图片', link: '/website/img' },
-        { text: 'Git', link: '/website/git' },
         { text: '其他', link: '/website/other' }
       ]
     }
