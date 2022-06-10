@@ -5,4 +5,7 @@
 ```
   // 启动
   npm run docs:dev
+
+  // 部署
+  npm run deploy
 ```
