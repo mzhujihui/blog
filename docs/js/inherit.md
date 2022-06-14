@@ -1,6 +1,5 @@
 # js继承方案
 
-
 ## 原型链继承
 
 > 将父类的实例作为子类的原型
@@ -31,10 +30,10 @@ instance2.name = '奔驰 G'is.name = '小明'
 
 ![原型链继承](https://cdn.jsdelivr.net/gh/mzhujihui/figure-bed/img/202204261214460.png)
 
-### 缺点
-!> 1. 多个实例对引用类型的操作会被篡改<br /><br />
+::: warning 缺点
+1. 多个实例对引用类型的操作会被篡改
 2. 子类型实例不能给父类型构造函数传参
-
+:::
 
 ## 借用构造函数(经典继承)
 
@@ -63,17 +62,19 @@ const instance2 = new Subtype('奔驰 G')
 
 ![经典继承](https://cdn.jsdelivr.net/gh/mzhujihui/figure-bed/img/202204261443237.png)
 
-### 优点
-?> 1. 可以在子类构造函数中向父类传参数<br /><br />
+::: tip 优点
+1. 可以在子类构造函数中向父类传参数
 2. 父类的引用属性不会被共享
+:::
 
-### 缺点
-!> 1. 只能继承父类的实例属性和方法，不能继承原型属性/方法（即不能访问Supertype.prototype上定义的属性/方法）<br /><br />
+::: warning 缺点
+1. 只能继承父类的实例属性和方法，不能继承原型属性/方法（即不能访问Supertype.prototype上定义的属性/方法）
 2. 无法实现复用，每个子类都有父类实例函数的副本，影响性能
+:::
 
 ## 组合继承
 
-> 用 **原型链** 实现对原型属性和方法的继承，用 **借用构造函数** 来实现实例属性的继承。
+> 用 `原型链` 实现对原型属性和方法的继承，用 `借用构造函数` 来实现实例属性的继承。
 
 ### 实现
 ```js
@@ -101,13 +102,14 @@ const instance2 = new Subtype('奔驰 G')
 
 ![组合继承](https://cdn.jsdelivr.net/gh/mzhujihui/figure-bed/img/202204261502480.png)
 
-### 缺点
-!> 调用了2次 **SuperType()** ，给 **SuperType** 的原型和实例上都写入了两个属性name和colors
+::: warning 缺点
+调用了2次 `SuperType()` ，给 `SuperType` 的原型和实例上都写入了两个属性name和colors
+:::
 
 
 ## 原型式继承
 
-> 就是对 **ES5 Object.create** 的模拟实现，将传入的对象作为创建的对象的原型。
+> 就是对 `ES5 Object.create` 的模拟实现，将传入的对象作为创建的对象的原型。
 
 ### 实现
 ```js
@@ -135,10 +137,10 @@ person2.name = '奔驰 G'
 
 ![原型继承](https://cdn.jsdelivr.net/gh/mzhujihui/figure-bed/img/202204271458401.png)
 
-### 缺点
-!> 1. 多个实例继承的引用类型属性指向相同，存在篡改的可能。<br /><br />
+::: warning 缺点
+1. 多个实例继承的引用类型属性指向相同，存在篡改的可能。
 2. 子类实例不能向父类传参
-
+:::
 
 ## 寄生式继承
 
@@ -169,11 +171,11 @@ person2.name = '奔驰 G'
 
 ![寄生继承](https://cdn.jsdelivr.net/gh/mzhujihui/figure-bed/img/202204271517957.png)
 
-### 缺点
-!> 1. 多个实例继承的引用类型属性指向相同，存在篡改的可能<br /><br />
-2. 子类实例不能向父类传参<br /><br />
+::: warning 缺点
+1. 多个实例继承的引用类型属性指向相同，存在篡改的可能
+2. 子类实例不能向父类传参
 3. 每次创建对象都会创建一遍增强对象的属性/方法
-
+:::
 
 ## 寄生组合式继承
 
@@ -220,6 +222,7 @@ const instance2 = new Subtype('奔驰 G')
 
 ![寄生组合继承](https://cdn.jsdelivr.net/gh/mzhujihui/figure-bed/img/202204271626425.png)
 
-### 优点
-?> 1. 只调用了一次 **SuperType()** ，并且因此避免了在 **SubType.prototype** 上创建不必要的属性。<br /><br />
-2. 原型链还能保持，能够正常使用 **instanceof** 和 **isPrototypeOf()**
+::: tip 优点
+1. 只调用了一次 `SuperType()` ，并且因此避免了在 `SubType.prototype` 上创建不必要的属性。
+2. 原型链还能保持，能够正常使用 `instanceof` 和 `isPrototypeOf()`
+:::
