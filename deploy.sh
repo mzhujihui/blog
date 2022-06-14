@@ -4,9 +4,6 @@
 set -e
 
 # build
-git add -A
-git commit -m 'init'
-git push
 npm run docs:build
 
 # navigate into the build output directory
