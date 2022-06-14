@@ -31,7 +31,7 @@ typeof null === 'object' 是一个久远的bug
 - 实现 `instanceof`
 
 ```js
-/`
+/
  * @param {*} obj 实例对象
  * @param {*} func 构造函数
  * @return {*} Boolean
