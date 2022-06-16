@@ -11,7 +11,7 @@
 
 ## 国外
 - [MDN Web Docs](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript)
-- [谷歌开发指南](https://developers.google.com/web)
+- [google developers](https://developers.google.com/web)
 - [web.dev](https://web.dev)
 - [DigitalOcean 社区](https://www.digitalocean.com/community)
 - [30 seconds of code 代码片段](https://www.30secondsofcode.org)
