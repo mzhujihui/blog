@@ -8,6 +8,13 @@ export default ({
   themeConfig: {
     nav: nav(),
 
+    editLink: {
+      repo: 'mzhujihui/blog',
+      branch: 'main',
+      dir: 'docs',
+      text: 'Edit this page on GitHub'
+    },
+
     sidebar: {
       '/js/': sidebarJs(),
       '/repository/': sidebarRepository(),
