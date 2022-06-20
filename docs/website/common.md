@@ -1,8 +1,8 @@
 # 常看的网站
 
 ## 国内
-- [vue-element-admin作者收藏夹](https://panjiachen.github.io/awesome-bookmarks/)
-- [公众号-前端真好玩](https://github.com/KieSun/all-of-frontend)
+- [vue-element-admin作者](https://panjiachen.github.io/awesome-bookmarks/)
+- [前端面试之道小册作者](https://github.com/KieSun/all-of-frontend)
 - [木易杨](https://www.muyiy.cn/)
 - [冴羽博客](https://github.com/mqyqingfeng/Blog)
 - [若川博客](https://lxchuan12.gitee.io/)

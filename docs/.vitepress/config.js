@@ -28,7 +28,13 @@ export default ({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present sanyan'
-    }
+    },
+
+    algolia: {
+      appId: 'UZUNYKR6BZ',
+      apiKey: '7d15b2b158a223451c078ab373dd85f1',
+      indexName: 'mzhujihui'
+    },
   }
 })
 
@@ -36,18 +42,17 @@ function nav() {
   return [
     { text: '首页', link: '/js/base', activeMatch: '/js/' },
     { text: '前端库', link: '/repository/component', activeMatch: '/repository/' },
-    { text: '网站', link: '/website/common', activeMatch: '/website/' },
-    { text: '掘金', link: 'https://juejin.cn/user/184373686320776' }
+    { text: '网站', link: '/website/common', activeMatch: '/website/' }
   ]
 }
 
 function sidebarJs() {
   return [
     {
-      text: 'JS',
+      text: 'JS基础',
       collapsible: true,
       items: [
-        { text: '数据类型', link: '/js/base' },
+        { text: '数据类型与数据判断', link: '/js/base' },
         { text: '继承', link: '/js/inherit' },
         { text: '排序', link: '/js/sort' }
       ]
