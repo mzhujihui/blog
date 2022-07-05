@@ -79,6 +79,7 @@ function sidebarWebsite() {
       text: '网站',
       collapsible: true,
       items: [
+        { text: '开发规范', link: '/website/norms' },
         { text: '常看网站', link: '/website/common' },
         { text: 'Git和Github', link: '/website/git' },
         { text: '图片', link: '/website/img' },
