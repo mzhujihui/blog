@@ -22,6 +22,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          external_repository: mzhujihui/mzhujihui.github.io
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: mzhujihui/mzhujihui.github.io # Deploy to external repository
           publish_dir: docs/.vitepress/dist
