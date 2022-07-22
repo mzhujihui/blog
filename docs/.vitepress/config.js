@@ -3,8 +3,6 @@ export default ({
   title: '三言两语',
   description: '博客',
 
-  base: '/blog/',
-
   lastUpdated: true,
 
   themeConfig: {
