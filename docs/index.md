@@ -5,16 +5,16 @@ title: 三言两语
 titleTemplate: 博客
 
 hero:
-  name: 三言
-  text: 个人博客
-  tagline: 点滴生活，点滴记录
+  name: 前端之路
+  text: 
+  tagline: The road to a front-end developer.
   actions:
     - theme: brand
       text: 马上进入 →
       link: /js/base
 
 features:
-  - title: Js
+  - title: JavaScript
     details: 
   - title: Vue
     details: 

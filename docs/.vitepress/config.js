@@ -9,15 +9,11 @@ export default ({
     nav: nav(),
 
     editLink: {
-      repo: 'mzhujihui/blog',
-      branch: 'main',
-      dir: 'docs',
-      text: 'Edit this page on GitHub'
+      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path'
     },
 
     sidebar: {
       '/js/': sidebarJs(),
-      '/repository/': sidebarRepository(),
       '/website/': sidebarWebsite(),
     },
 
@@ -41,8 +37,7 @@ export default ({
 function nav() {
   return [
     { text: '首页', link: '/js/base', activeMatch: '/js/' },
-    { text: '前端库', link: '/repository/component', activeMatch: '/repository/' },
-    { text: '网站', link: '/website/common', activeMatch: '/website/' }
+    { text: '网站', link: '/website/follow', activeMatch: '/website' }
   ]
 }
 
@@ -60,27 +55,14 @@ function sidebarJs() {
   ]
 }
 
-function sidebarRepository() {
-  return [
-    {
-      text: '前端库',
-      collapsible: true,
-      items: [
-        { text: '组件库', link: '/repository/component' },
-        { text: '常用库', link: '/repository/common' }
-      ]
-    }
-  ]
-}
-
 function sidebarWebsite() {
   return [
     {
       text: '网站',
-      collapsible: true,
+      collapsible: false,
       items: [
+        { text: '关注', link: '/website/follow' },
         { text: '开发规范', link: '/website/norms' },
-        { text: '常看网站', link: '/website/common' },
         { text: 'Git和Github', link: '/website/git' },
         { text: '图片', link: '/website/img' },
         { text: '其他', link: '/website/other' }

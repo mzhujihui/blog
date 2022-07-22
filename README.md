@@ -1,11 +1,11 @@
-# 个人博客
+<h1 align="center"><samp>前端之路</samp></h1>
 
-> 点滴记录.
+<p align="center">
+  <samp>The road to a front-end developer.</samp>
+</p>
 
-```
-  // 启动
-  npm run docs:dev
+## 目录
 
-  // 部署
-  npm run deploy
-```
+
+## License
+Copyright (c) 2022 sanyan

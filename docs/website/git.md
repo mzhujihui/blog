@@ -7,6 +7,7 @@
 
 
 ## GitHub
+- [GitHub Docs](https://docs.github.com/cn)
 - [Steam++](https://steampp.net) 加速访问GitHub
 - [GitHub 中文社区](https://www.githubs.cn/top/JavaScript) 包括开源项目排行榜、技术博客等
 - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) 分享 GitHub 上有趣、入门级的开源项目
