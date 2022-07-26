@@ -104,13 +104,21 @@
   color: var(--vp-c-brand-lighter);
 }
 
-.dark .vp-doc a:hover,
-.dark .vp-doc a > code:hover {
-  color: var(--vp-c-brand-lightest);
-  opacity: 1;
-}
-
 /* Transition by color instead of opacity */
 .dark .vp-doc .custom-block a {
   transition: color 0.25s;
+}
+
+/* Set the A tag hover status */
+.vp-doc a:hover,
+.vp-doc a > code:hover {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.dark .vp-doc a:hover,
+.dark .vp-doc a > code:hover {
+  border-bottom: 1px solid var(--vp-c-brand-lightest);
+  color: var(--vp-c-brand-lightest);
+  opacity: 1;
 }
