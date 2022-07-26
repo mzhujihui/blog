@@ -110,15 +110,33 @@
 }
 
 /* Set the A tag hover status */
-.vp-doc a:hover,
-.vp-doc a > code:hover {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+.vp-doc a,
+.vp-doc a > code {
+  display: inline-block;
+  position: relative;
+}
+
+.vp-doc a:after,
+.vp-doc a > code:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--vp-c-brand-lighter);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.vp-doc a:hover:after,
+.vp-doc a > code:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .dark .vp-doc a:hover,
 .dark .vp-doc a > code:hover {
-  border-bottom: 1px solid var(--vp-c-brand-lightest);
   color: var(--vp-c-brand-lightest);
-  opacity: 1;
 }
