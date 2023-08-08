@@ -26,11 +26,9 @@ export default ({
       copyright: 'Copyright © 2022-present sanyan'
     },
 
-    algolia: {
-      appId: 'UZUNYKR6BZ',
-      apiKey: '7d15b2b158a223451c078ab373dd85f1',
-      indexName: 'mzhujihui'
-    },
+    search: {
+      provider: 'local'
+    }
   }
 })
 
